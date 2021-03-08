@@ -1,0 +1,59 @@
+@import "./variables";
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato";
+    -webkit-font-smoothing: antialiased;
+    color: $dark;
+    height: 100vh;
+}
+
+nav li:last-child a {
+    background: $primary;
+    &:hover {
+        background: $primary-hover;
+    }
+}
+
+nav li a {
+    transition: $smooth;
+    &:hover {
+        color: $primary;
+    }
+}
+
+section.hero {
+    background: $secondary;
+}
+
+.size {
+    background: $secondary;
+}
+
+.add_to_cart {
+    border: 2px solid $primary;
+    color: $primary;
+    transition: $smooth;
+    &:hover {
+        background: $primary;
+        color: $pure;
+        border-color: $pure;
+    }
+}
+
+.btn_primary {
+    background: $primary;
+    transition: $smooth;
+    &:hover {
+        background: $primary-hover;
+    }
+}
+
+section.cart {
+    background: $secondary;
+    .amount {
+        color: $primary;
+    }
+}
