@@ -1,5 +1,6 @@
 @import "./variables";
-
+@import "~noty/src/noty.scss";
+@import "~noty/src/themes/mint.scss";
 body {
     margin: 0;
     padding: 0;
@@ -56,4 +57,9 @@ section.cart {
     .amount {
         color: $primary;
     }
+}
+
+.noty_theme__mint {
+    border-radius: 50px !important;
+    padding-left: 8px !important;
 }
